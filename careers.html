@@ -3,300 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers - AnitechCS | Join Our Innovative Team</title>
-    <meta name="description" content="Explore career opportunities at AnitechCS. Join our team of innovators in roles like Senior Full-Stack Engineer and Cloud DevOps Engineer.">
+    <title>Careers at AnitechCS - Join Our Global Team</title>
+    <meta name="description" content="Join AnitechCS - Exciting career opportunities in web development, cloud engineering, and IT services. Work with global teams, cutting-edge technologies, and make an impact.">
+    <meta name="keywords" content="AnitechCS careers, IT jobs, web developer jobs, cloud engineer jobs, remote work, tech careers">
+    <meta name="author" content="AnitechCS">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-    <!-- Holiday Banner -->
-    <div class="holiday-banner" id="holidayBanner">
-        <div class="container">
-            <span id="holidayMessage">Special Holiday Offer: Get 15% off on all services!</span>
-            <button class="close-banner" id="closeBanner">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    Anitech<span class="accent">CS</span>
+                </a>
+                
+                <ul class="nav-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a href="services.html" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="careers.html">Careers</a>
+                        <a href="careers.html" class="nav-link active">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
                     </li>
                 </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">&#9776;</button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(32,35,42,0.9) 0%, rgba(0,123,255,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h1>Join Our Team</h1>
-                    <p class="lead">Build the future with innovative technology solutions</p>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 150px 0 100px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(32, 35, 42, 0.8));">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Join Our Global Team</h1>
+                    <p class="reveal">Build the future of technology with AnitechCS</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Careers Intro -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Build Your Career at AnitechCS</h2>
-                    <p class="lead mb-5 reveal">
-                        At AnitechCS, we believe that our people are our greatest asset. We're always looking for talented, 
-                        passionate individuals who want to make a difference in the world of technology. Join us in our mission 
-                        to empower businesses with digital brilliance.
-                    </p>
+        </section>
+        
+        <!-- Why Work With Us -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Why Choose AnitechCS?</h2>
+                    <p class="section-subtitle reveal">Join a company that values innovation, growth, and work-life balance</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-globe-americas card-icon" style="color: #28a745;"></i>
+                                <h3 class="card-title">Global Opportunities</h3>
+                            </div>
+                            <p class="card-text">Work with international teams across 7 countries. Experience diverse cultures and perspectives while building world-class solutions.</p>
+                        </div>
+                    </div>
                     
-                    <div class="row mt-5">
-                        <div class="col-md-4 mb-4 reveal">
-                            <div class="card text-center p-4 h-100">
-                                <div class="card-icon">
-                                    <i class="fas fa-rocket"></i>
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-rocket card-icon" style="color: #007BFF;"></i>
+                                <h3 class="card-title">Cutting-Edge Technology</h3>
+                            </div>
+                            <p class="card-text">Stay ahead of the curve with the latest technologies, frameworks, and tools. Continuous learning and professional development opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-balance-scale card-icon" style="color: #17a2b8;"></i>
+                                <h3 class="card-title">Work-Life Balance</h3>
+                            </div>
+                            <p class="card-text">Flexible working hours, remote work options, and a supportive environment that values both professional growth and personal well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Company Culture -->
+        <section style="background: var(--light-gray); padding: 80px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="reveal slide-left">
+                            <h2>Our Company Culture</h2>
+                            <p>At AnitechCS, we believe that great technology comes from great people. Our culture is built on collaboration, innovation, and mutual respect.</p>
+                            
+                            <div class="culture-points" style="margin: 2rem 0;">
+                                <div class="culture-item" style="display: flex; align-items: center; margin: 1rem 0;">
+                                    <i class="fas fa-users" style="color: var(--primary-color); font-size: 1.5rem; margin-right: 1rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0; font-size: 1.1rem;">Collaborative Environment</h4>
+                                        <p style="margin: 0; color: var(--text-light);">Open communication and teamwork across all levels</p>
+                                    </div>
                                 </div>
-                                <h5>Innovation</h5>
-                                <p>Work with cutting-edge technologies and solve complex challenges</p>
+                                
+                                <div class="culture-item" style="display: flex; align-items: center; margin: 1rem 0;">
+                                    <i class="fas fa-graduation-cap" style="color: var(--primary-color); font-size: 1.5rem; margin-right: 1rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0; font-size: 1.1rem;">Continuous Learning</h4>
+                                        <p style="margin: 0; color: var(--text-light);">Professional development and skill enhancement programs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="culture-item" style="display: flex; align-items: center; margin: 1rem 0;">
+                                    <i class="fas fa-lightbulb" style="color: var(--primary-color); font-size: 1.5rem; margin-right: 1rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0; font-size: 1.1rem;">Innovation Focus</h4>
+                                        <p style="margin: 0; color: var(--text-light);">Encouraged to explore new ideas and technologies</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="culture-item" style="display: flex; align-items: center; margin: 1rem 0;">
+                                    <i class="fas fa-award" style="color: var(--primary-color); font-size: 1.5rem; margin-right: 1rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0; font-size: 1.1rem;">Recognition & Growth</h4>
+                                        <p style="margin: 0; color: var(--text-light);">Performance-based promotions and competitive compensation</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4 reveal">
-                            <div class="card text-center p-4 h-100">
-                                <div class="card-icon">
-                                    <i class="fas fa-globe"></i>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card reveal slide-right" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; height: 100%;">
+                            <h3 style="color: white;">Employee Benefits</h3>
+                            <div class="benefits-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-medical" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Health Insurance</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Comprehensive medical coverage</p>
                                 </div>
-                                <h5>Global Impact</h5>
-                                <p>Make a difference for clients across multiple continents and industries</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4 reveal">
-                            <div class="card text-center p-4 h-100">
-                                <div class="card-icon">
-                                    <i class="fas fa-users"></i>
+                                
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-plane" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Paid Time Off</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Generous vacation & sick leave</p>
                                 </div>
-                                <h5>Great Culture</h5>
-                                <p>Collaborative environment with continuous learning and growth opportunities</p>
+                                
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-laptop" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Remote Work</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Flexible work arrangements</p>
+                                </div>
+                                
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-dollar-sign" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Competitive Salary</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Performance-based compensation</p>
+                                </div>
+                                
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-book-open" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Learning Budget</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Annual training & certification budget</p>
+                                </div>
+                                
+                                <div class="benefit-item" style="text-align: center;">
+                                    <i class="fas fa-gift" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                    <h5>Bonuses</h5>
+                                    <p style="font-size: 0.9rem; margin: 0;">Project completion & annual bonuses</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Current Openings -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <h2 class="section-title text-center">Current Openings</h2>
-                    <p class="text-center mb-5 reveal">Explore our current career opportunities and find your perfect fit</p>
-
-                    <!-- Job Listing 1 -->
-                    <div class="card mb-4 reveal">
-                        <div class="card-body p-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h4 class="text-primary">Senior Full-Stack Engineer</h4>
-                                    <p class="text-muted mb-3">Join our core development team to build scalable web applications and digital solutions.</p>
-                                    <div class="job-tags">
-                                        <span class="badge bg-light text-dark me-2">JavaScript</span>
-                                        <span class="badge bg-light text-dark me-2">React</span>
-                                        <span class="badge bg-light text-dark me-2">Node.js</span>
-                                        <span class="badge bg-light text-dark me-2">AWS</span>
-                                        <span class="badge bg-light text-dark">MongoDB</span>
-                                    </div>
+        </section>
+        
+        <!-- Current Openings -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Current Openings</h2>
+                    <p class="section-subtitle reveal">Exciting opportunities to join our growing team</p>
+                </div>
+                
+                <div class="job-listings">
+                    <!-- Senior Full-Stack Engineer -->
+                    <div class="job-card card reveal" style="margin-bottom: 2rem; border-left: 4px solid var(--primary-color);">
+                        <div class="job-header" style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <div>
+                                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Senior Full-Stack Engineer</h3>
+                                <div class="job-meta" style="display: flex; gap: 2rem; color: var(--text-light); font-size: 0.9rem;">
+                                    <span><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>Remote / Global</span>
+                                    <span><i class="fas fa-clock" style="margin-right: 0.5rem;"></i>Full-time</span>
+                                    <span><i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>Senior Level</span>
                                 </div>
-                                <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                                    <div class="mb-3">
-                                        <span class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Remote / Global</span>
-                                    </div>
-                                    <a href="mailto:careers@anitechcs.com?subject=Application: Senior Full-Stack Engineer" class="btn btn-primary">Apply Now</a>
-                                </div>
+                            </div>
+                            <span class="job-badge" style="background: var(--primary-color); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; white-space: nowrap;">Featured</span>
+                        </div>
+                        
+                        <p class="job-description" style="margin-bottom: 1.5rem;">We're looking for a senior full-stack engineer to join our development team and help build cutting-edge web applications for our global clients. You'll work with modern technologies and collaborate with teams across multiple time zones.</p>
+                        
+                        <div class="job-requirements" style="margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Key Requirements:</h4>
+                            <div class="requirements-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>5+ years full-stack experience</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>React, Node.js, Python expertise</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Database design (SQL/NoSQL)</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Cloud platforms (AWS/Azure)</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Agile development experience</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Strong communication skills</div>
+                            </div>
+                        </div>
+                        
+                        <div class="job-offer" style="background: var(--light-gray); padding: 1rem; border-radius: var(--border-radius); margin-bottom: 1rem;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">What We Offer:</h4>
+                            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                                <span><i class="fas fa-dollar-sign" style="color: #28a745; margin-right: 0.5rem;"></i>$85,000 - $120,000</span>
+                                <span><i class="fas fa-home" style="color: #17a2b8; margin-right: 0.5rem;"></i>Remote work option</span>
+                                <span><i class="fas fa-graduation-cap" style="color: #fd7e14; margin-right: 0.5rem;"></i>Learning budget</span>
+                                <span><i class="fas fa-medical" style="color: #e91e63; margin-right: 0.5rem;"></i>Full benefits</span>
+                            </div>
+                        </div>
+                        
+                        <div class="job-actions" style="display: flex; gap: 1rem; align-items: center;">
+                            <a href="mailto:careers@anitechcs.com?subject=Application: Senior Full-Stack Engineer&body=Dear AnitechCS Team,%0D%0A%0D%0AI am interested in the Senior Full-Stack Engineer position. Please find my resume attached.%0D%0A%0D%0ABest regards," class="btn btn-primary">Apply Now</a>
+                            <div class="job-posted" style="color: var(--text-muted); font-size: 0.9rem;">
+                                <i class="fas fa-calendar" style="margin-right: 0.5rem;"></i>Posted 3 days ago
                             </div>
                         </div>
                     </div>
-
-                    <!-- Job Listing 2 -->
-                    <div class="card mb-4 reveal">
-                        <div class="card-body p-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h4 class="text-primary">Cloud DevOps Engineer</h4>
-                                    <p class="text-muted mb-3">Design and implement cloud infrastructure and CI/CD pipelines for enterprise clients.</p>
-                                    <div class="job-tags">
-                                        <span class="badge bg-light text-dark me-2">AWS</span>
-                                        <span class="badge bg-light text-dark me-2">Docker</span>
-                                        <span class="badge bg-light text-dark me-2">Kubernetes</span>
-                                        <span class="badge bg-light text-dark me-2">Terraform</span>
-                                        <span class="badge bg-light text-dark">Jenkins</span>
-                                    </div>
+                    
+                    <!-- Cloud DevOps Engineer -->
+                    <div class="job-card card reveal" style="margin-bottom: 2rem; border-left: 4px solid #28a745;">
+                        <div class="job-header" style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <div>
+                                <h3 style="color: #28a745; margin-bottom: 0.5rem;">Cloud DevOps Engineer</h3>
+                                <div class="job-meta" style="display: flex; gap: 2rem; color: var(--text-light); font-size: 0.9rem;">
+                                    <span><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>California / Remote</span>
+                                    <span><i class="fas fa-clock" style="margin-right: 0.5rem;"></i>Full-time</span>
+                                    <span><i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>Mid-Senior Level</span>
                                 </div>
-                                <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                                    <div class="mb-3">
-                                        <span class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Remote / Global</span>
-                                    </div>
-                                    <a href="mailto:careers@anitechcs.com?subject=Application: Cloud DevOps Engineer" class="btn btn-primary">Apply Now</a>
-                                </div>
+                            </div>
+                            <span class="job-badge" style="background: #28a745; color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; white-space: nowrap;">Hot</span>
+                        </div>
+                        
+                        <p class="job-description" style="margin-bottom: 1.5rem;">Join our infrastructure team to design, implement, and maintain scalable cloud solutions. You'll work with cutting-edge DevOps tools and help optimize our deployment pipelines for maximum efficiency and reliability.</p>
+                        
+                        <div class="job-requirements" style="margin-bottom: 1.5rem;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Key Requirements:</h4>
+                            <div class="requirements-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>3+ years DevOps experience</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>AWS/Azure cloud platforms</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Docker & Kubernetes</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>CI/CD pipeline experience</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Infrastructure as Code (Terraform)</div>
+                                <div><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i>Monitoring & logging tools</div>
+                            </div>
+                        </div>
+                        
+                        <div class="job-offer" style="background: var(--light-gray); padding: 1rem; border-radius: var(--border-radius); margin-bottom: 1rem;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">What We Offer:</h4>
+                            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                                <span><i class="fas fa-dollar-sign" style="color: #28a745; margin-right: 0.5rem;"></i>$75,000 - $105,000</span>
+                                <span><i class="fas fa-home" style="color: #17a2b8; margin-right: 0.5rem;"></i>Hybrid work model</span>
+                                <span><i class="fas fa-certificate" style="color: #fd7e14; margin-right: 0.5rem;"></i>AWS certifications</span>
+                                <span><i class="fas fa-users" style="color: #e91e63; margin-right: 0.5rem;"></i>Great team culture</span>
+                            </div>
+                        </div>
+                        
+                        <div class="job-actions" style="display: flex; gap: 1rem; align-items: center;">
+                            <a href="mailto:careers@anitechcs.com?subject=Application: Cloud DevOps Engineer&body=Dear AnitechCS Team,%0D%0A%0D%0AI am interested in the Cloud DevOps Engineer position. Please find my resume attached.%0D%0A%0D%0ABest regards," class="btn btn-primary" style="background: #28a745; border-color: #28a745;">Apply Now</a>
+                            <div class="job-posted" style="color: var(--text-muted); font-size: 0.9rem;">
+                                <i class="fas fa-calendar" style="margin-right: 0.5rem;"></i>Posted 1 week ago
                             </div>
                         </div>
                     </div>
-
-                    <!-- More Opportunities -->
-                    <div class="text-center mt-5 reveal">
-                        <div class="card bg-primary text-white">
-                            <div class="card-body p-5">
-                                <h3 class="mb-3">Don't See the Perfect Role?</h3>
-                                <p class="mb-4">We're always interested in meeting talented people. Send us your resume and tell us how you can contribute to our team.</p>
-                                <a href="mailto:careers@anitechcs.com" class="btn btn-light btn-lg">Send Your Resume</a>
-                            </div>
-                        </div>
+                    
+                    <!-- No Current Openings Message -->
+                    <div class="card reveal" style="text-align: center; padding: 3rem; background: var(--light-gray);">
+                        <h3>Don't See the Right Position?</h3>
+                        <p style="margin: 1rem 0;">We're always looking for talented individuals to join our team. Send us your resume and tell us about your passion for technology!</p>
+                        <a href="mailto:careers@anitechcs.com?subject=General Application&body=Dear AnitechCS Team,%0D%0A%0D%0AI am interested in opportunities at AnitechCS. Please find my resume attached.%0D%0A%0D%0ABest regards," class="btn btn-outline">Send General Application</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Why Work With Us?</h2>
-                    <p class="mb-5 reveal">We offer competitive benefits and a supportive work environment</p>
+        </section>
+        
+        <!-- Application Process -->
+        <section style="background: var(--secondary-color); color: white; padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal" style="color: white;">Our Hiring Process</h2>
+                    <p class="section-subtitle reveal" style="color: rgba(255,255,255,0.8);">Simple, transparent, and focused on finding the right fit</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 reveal">
-                    <div class="card text-center p-4 h-100">
-                        <div class="card-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h5>Competitive Salary</h5>
-                        <p>Industry-competitive compensation packages with performance bonuses</p>
+                
+                <div class="process-steps" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="process-step reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: var(--border-radius-large);">
+                        <div class="step-number" style="background: var(--primary-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">1</div>
+                        <h4>Application Review</h4>
+                        <p style="color: rgba(255,255,255,0.8);">We review your resume and portfolio to assess your skills and experience.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 reveal">
-                    <div class="card text-center p-4 h-100">
-                        <div class="card-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h5>Health Benefits</h5>
-                        <p>Comprehensive health, dental, and vision insurance for you and your family</p>
+                    
+                    <div class="process-step reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: var(--border-radius-large);">
+                        <div class="step-number" style="background: #28a745; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">2</div>
+                        <h4>Initial Interview</h4>
+                        <p style="color: rgba(255,255,255,0.8);">A friendly conversation to learn about your background and career goals.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 reveal">
-                    <div class="card text-center p-4 h-100">
-                        <div class="card-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h5>Learning & Development</h5>
-                        <p>Continuous learning opportunities with training budgets and certifications</p>
+                    
+                    <div class="process-step reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: var(--border-radius-large);">
+                        <div class="step-number" style="background: #17a2b8; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">3</div>
+                        <h4>Technical Assessment</h4>
+                        <p style="color: rgba(255,255,255,0.8);">A practical assessment to demonstrate your technical skills and problem-solving abilities.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 reveal">
-                    <div class="card text-center p-4 h-100">
-                        <div class="card-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <h5>Remote Flexibility</h5>
-                        <p>Work from anywhere with our flexible remote work policies</p>
+                    
+                    <div class="process-step reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: var(--border-radius-large);">
+                        <div class="step-number" style="background: #fd7e14; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">4</div>
+                        <h4>Team Interview</h4>
+                        <p style="color: rgba(255,255,255,0.8);">Meet your potential teammates and discuss collaboration and team dynamics.</p>
+                    </div>
+                    
+                    <div class="process-step reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: var(--border-radius-large);">
+                        <div class="step-number" style="background: #e91e63; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">5</div>
+                        <h4>Offer & Onboarding</h4>
+                        <p style="color: rgba(255,255,255,0.8);">If it's a mutual fit, we'll extend an offer and help you get started with comprehensive onboarding.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        
+        <!-- Contact HR -->
+        <section style="padding: 80px 0; text-align: center;">
+            <div class="container">
+                <div class="reveal">
+                    <h2>Have Questions About Careers?</h2>
+                    <p style="font-size: 1.2rem; margin: 1rem 0 2rem; color: var(--text-light);">Our HR team is here to help with any questions about positions, benefits, or the application process.</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <a href="mailto:careers@anitechcs.com" class="btn btn-primary">
+                            <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> careers@anitechcs.com
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>AnitechCS</h5>
-                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AnitechCS</h4>
+                    <p>Empowering businesses with innovative digital solutions since 2012. We deliver excellence in web development, cloud hosting, and comprehensive IT services.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#pricing">Pricing</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Cloud Hosting</a></li>
-                        <li><a href="services.html">Maintenance & Support</a></li>
-                        <li><a href="services.html">ERP Integration</a></li>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#website-development">Website Development</a></li>
+                        <li><a href="services.html#cloud-hosting">Cloud Hosting</a></li>
+                        <li><a href="services.html#maintenance-support">Maintenance & Support</a></li>
+                        <li><a href="services.html#digital-transformation">Digital Transformation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Subscribe to get updates on our latest services and offers.</p>
-                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
                     </form>
+                    <p><small>By subscribing, you agree to our Privacy Policy.</small></p>
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnitechCS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- Tawk.to Live Chat (Placeholder) -->
+    <script type="text/javascript">
+        // Replace PROPERTY_ID with actual Tawk.to property ID
+        /*
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/PROPERTY_ID/1234567890';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        */
+    </script>
 </body>
 </html>
