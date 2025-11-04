@@ -1,352 +1,222 @@
-# AnitechCS Corporate Website
+# 🌟 AnitechCS Corporate Website
 
-A professional, responsive corporate website for AnitechCS.com built with modern web technologies. This is a **frontend-only** solution with no backend requirements, featuring dynamic pricing, currency conversion, holiday promotions, and a comprehensive admin panel.
+> **Professional, responsive corporate website built with HTML5, CSS3, JavaScript, and modern web technologies**
 
-## 🚀 Features
+![AnitechCS Website](https://img.shields.io/badge/Status-Live-brightgreen) ![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
-### Core Website Features
-- **Responsive Design**: Works perfectly on all devices (mobile, tablet, desktop)
-- **Modern Animations**: Subtle reveal-on-scroll, hover effects, and smooth transitions
-- **SEO Optimized**: Complete meta tags, Open Graph, and JSON-LD structured data
-- **Professional Branding**: Corporate color scheme with consistent typography
-- **Accessibility**: WCAG compliant with proper ARIA labels and semantic HTML
+## 🚀 Live Demo
 
-### Dynamic Pricing System
-- **Multi-Currency Support**: USD, INR, EUR, GBP, CAD, PHP, ZAR
-- **Auto Currency Detection**: Based on user's location/timezone
-- **Live Exchange Rates**: Fetches real-time rates with fallback values
-- **Holiday Discounts**: Automatic 15% off during Thanksgiving, Christmas, New Year
-- **Regional Pricing**: Transparent currency conversion with Intl.NumberFormat
+**🌐 Website URL:** [https://akshatkardak.github.io/IT-3/](https://akshatkardak.github.io/IT-3/)
 
-### Content Management
-- **Admin Panel**: Full CMS without backend (`admin.html`)
-- **Holiday Banner**: Dynamic seasonal promotions with auto-scheduling
-- **Testimonials Management**: Easy editing and preview system
-- **Currency Settings**: Configure rates and default currency
-- **Export/Import**: Backup and transfer settings via JSON
+---
 
-### Technical Features
-- **No Backend Required**: Pure frontend with localStorage persistence
-- **Modern JavaScript**: ES6+, modular architecture, performance optimized
-- **Bootstrap 5**: Responsive grid and components
-- **Font Awesome 6**: Professional icons throughout
-- **Google Fonts**: Poppins, Roboto, Lato, Open Sans typography
-- **Progressive Enhancement**: Works without JavaScript for basic functionality
+## 🐛 **GitHub Pages Deployment Error Fix**
 
-## 📁 Project Structure
+**If you're seeing deployment errors, follow these exact steps:**
 
-```
-IT-3/
-│
-├── index.html              # Home page with hero, services, testimonials
-├── about.html              # Company info, leadership, global presence
-├── services.html           # Services & pricing with dynamic currency
-├── careers.html            # Job listings and company culture
-├── contact.html            # Contact form with Google Maps
-├── admin.html              # Admin panel for content management
-│
-└── assets/
-    ├── css/
-    │   └── styles.css          # Complete styling with animations
-    └── js/
-        ├── main.js             # Core functionality and animations
-        └── pricing.js          # Currency handling and pricing logic
-```
-
-## 🎨 Brand & Design
-
-### Color Palette
-- **Primary**: `#007BFF` (Blue)
-- **Secondary**: `#20232A` (Dark Gray)
-- **Accent**: `#F8F9FA` (Light Gray)
-- **Success**: `#28a745`
-- **Warning**: `#ffc107`
-- **Danger**: `#dc3545`
-
-### Typography
-- **Headings**: Poppins/Roboto Bold (800, 700, 600)
-- **Body**: Lato/Open Sans Regular (400)
-- **Accents**: Font weights 300, 500 for emphasis
-
-### Design Principles
-- Clean, minimalistic corporate aesthetic
-- Consistent spacing with CSS custom properties
-- Subtle shadows and border radius for depth
-- Smooth animations with accessibility considerations
-
-## 💰 Pricing Structure
-
-### Website Development
-- **Basic Website** (5 pages): $499
-- **Corporate Website**: $999
-- **E-commerce Website**: $1,499
-- **Enterprise Solution**: $2,999+
-
-### Cloud Hosting
-- **Basic Hosting** (5 GB): $15/month
-- **Business Cloud** (50 GB): $49/month
-- **Enterprise Cloud** (Unlimited): $99/month
-
-### Maintenance & Support
-- **Monthly Plan**: $59/month
-- **Annual Plan**: $499/year (save $209)
-
-### Holiday Offers
-- **15% Discount** during Thanksgiving, Christmas, New Year
-- **2 Months Free** on annual hosting plans
-
-## 🛠️ Setup & Deployment
-
-### Quick Start
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/AkshatKardak/IT-3.git
-   cd IT-3
-   ```
-
-2. **Open in browser**:
-   - Open `index.html` in any modern web browser
-   - Or serve via local server (recommended):
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js http-server
-   npx http-server
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-
-3. **Access admin panel**:
-   - Navigate to `admin.html`
-   - Configure settings as needed
-   - Changes persist in browser localStorage
-
-### Production Deployment
-
-This website can be deployed on any static hosting service:
-
-#### Recommended Hosts
-- **Netlify**: Drag & drop deployment with forms
-- **Vercel**: GitHub integration with edge functions
-- **AWS S3 + CloudFront**: Scalable with CDN
-- **DigitalOcean App Platform**: Simple static site hosting
-- **GitHub Pages**: Free hosting for public repos
-
-#### Pre-Launch Checklist
-
-**Required Updates** (Replace placeholders):
-- [ ] Google Analytics ID (`G-XXXXXXXXXX`)
-- [ ] Tawk.to Property ID for live chat
-- [ ] Google Maps Embed API key
-- [ ] reCAPTCHA v3 Site Key
-- [ ] Mailchimp form action URL
-- [ ] Social media profile URLs
-- [ ] Company logo and images
-
-**Optional Enhancements**:
-- [ ] SSL certificate (automatic with most hosts)
-- [ ] Custom domain configuration
-- [ ] CDN setup for global performance
-- [ ] Contact form backend integration
-- [ ] Newsletter signup backend
-
-## ⚙️ Configuration
-
-### Admin Panel Features
-Access the admin panel at `/admin.html` to configure:
-
-1. **Holiday Banner**
-   - Custom text with HTML/emoji support
-   - Auto-enable during holidays
-   - Force show/hide overrides
-
-2. **Testimonials**
-   - Add/edit customer testimonials
-   - Preview before publishing
-   - Format: "Quote — Author Name, Title"
-
-3. **Currency Settings**
-   - Set default currency or use auto-detect
-   - Update fallback exchange rates
-   - Fetch live rates from API
-
-4. **Export/Import**
-   - Backup all settings as JSON
-   - Transfer settings between environments
-   - Validate JSON before import
-
-### Environment Variables (Optional)
-For enhanced functionality, set these in your hosting provider:
-
+### **Step 1: Enable GitHub Pages**
 ```bash
-# Optional: Custom API endpoints
-EXCHANGE_API_URL=https://api.exchangerate-api.com/v4/latest/USD
-MAIL_SERVICE_URL=https://your-backend.com/contact
-
-# Optional: Analytics and tracking
-GA_MEASUREMENT_ID=G-XXXXXXXXXX
-TAWK_PROPERTY_ID=your-property-id
-RECAPTCHA_SITE_KEY=your-site-key
+1. Go to your repository: https://github.com/AkshatKardak/IT-3
+2. Click "Settings" tab
+3. Scroll down to "Pages" section on left sidebar
+4. Under "Build and deployment":
+   - Source: Select "GitHub Actions" (not "Deploy from a branch")
+   - Click "Save"
 ```
 
-## 🔧 Customization
+### **Step 2: Fix Workflow Permissions**
+```bash
+1. Still in Settings, go to "Actions" → "General"
+2. Under "Workflow permissions":
+   - Select "Read and write permissions" ✓
+   - Check "Allow GitHub Actions to create and approve pull requests" ✓
+   - Click "Save"
+```
 
-### Adding New Services
-1. Edit `services.html`
-2. Add service section with pricing
-3. Update `pricing.js` BASE_PRICING object
-4. Add navigation links in footer
+### **Step 3: Re-run Deployment**
+```bash
+1. Go to "Actions" tab
+2. Click on the failed "Deploy to Pages" workflow
+3. Click "Re-run all jobs" button
+4. Wait for green checkmarks
+```
 
-### Modifying Colors
-Update CSS custom properties in `assets/css/styles.css`:
+### **Step 4: Verify Deployment**
+Once successful, your website will be available at:
+**https://akshatkardak.github.io/IT-3/**
 
-```css
-:root {
-  --primary-color: #007BFF;    /* Your primary color */
-  --secondary-color: #20232A;  /* Your secondary color */
-  --accent-color: #F8F9FA;     /* Your accent color */
+---
+
+## 📋 Project Overview
+
+AnitechCS is a modern, professional corporate website showcasing IT services including:
+- 💻 **Website Development** - Custom web solutions
+- ☁️ **Cloud Hosting** - Reliable hosting services
+- 🛠️ **Maintenance & Support** - Ongoing website care
+- 🔄 **Digital Transformation** - Business modernization
+
+## 🎯 Key Features
+
+### ✨ **Modern Design & UX**
+- Fully responsive design (mobile-first approach)
+- Clean, professional corporate aesthetics
+- Smooth animations and transitions
+- Cross-browser compatibility
+
+### 🛡️ **Security & Privacy**
+- Math Captcha system (no reCAPTCHA needed)
+- Form validation and sanitization
+- Secure contact form with mailto integration
+- Privacy-compliant features
+
+### 🗺️ **Interactive Elements**
+- Interactive Leaflet.js map (no API key required)
+- Custom chat widget with smart responses
+- FAQ accordion system
+- Dynamic pricing with multi-currency support
+
+### 📊 **Analytics & Tracking**
+- Google Analytics integration with your API
+- Custom event tracking
+- User interaction monitoring
+- Performance metrics
+
+### 💰 **Advanced Features**
+- Static exchange rate system (10 currencies)
+- Holiday discount automation
+- Admin panel integration
+- Professional contact forms
+
+---
+
+## 🏗️ **Technology Stack**
+
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
+| **Frameworks** | Bootstrap 5.3.2 |
+| **Icons** | Font Awesome 6.4.0 |
+| **Maps** | Leaflet.js 1.9.4 + OpenStreetMap |
+| **Analytics** | Google Analytics 4 (Your API) |
+| **Deployment** | GitHub Pages + GitHub Actions |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🔧 **Quick Fixes for Common Deployment Errors**
+
+### **❌ Error: "Pages build and deployment failed"**
+**Solution:**
+1. Repository Settings → Pages
+2. Source: Change to "GitHub Actions" ✓
+3. Re-run workflow in Actions tab
+
+### **❌ Error: "Resource not accessible by integration"**
+**Solution:**
+1. Settings → Actions → General
+2. Workflow permissions: "Read and write" ✓
+3. "Allow GitHub Actions to create PRs": ✓
+4. Save and re-run workflow
+
+### **❌ Error: "Workflow run failed"**
+**Solution:**
+1. Actions tab → Click failed workflow
+2. Check logs for specific error
+3. Click "Re-run all jobs"
+4. If still fails, the workflow file is correct - check repo permissions
+
+---
+
+## 📊 **Features Included**
+
+### ✅ **No API Keys Required**
+- **Maps**: Uses free OpenStreetMap
+- **Captcha**: Pure JavaScript math problems
+- **Chat**: Self-contained widget
+- **Exchange Rates**: Static rates with optional live updates
+
+### ✅ **API Integrations Included**
+- **Google Analytics**: Your user ID and API key integrated
+- **Exchange Rates**: Optional live rate fetching
+- **Map Services**: Leaflet.js with OpenStreetMap
+
+### ✅ **Professional Features**
+- Comprehensive contact forms
+- Interactive office map
+- Multi-currency pricing
+- Holiday discount system
+- FAQ system
+- Customer chat widget
+- Admin management panel
+
+---
+
+## 🐛 **Troubleshooting**
+
+### **Map Showing Blank Box**
+**If the contact page map is blank:**
+
+1. **Check browser console** for errors
+2. **Verify Leaflet loaded**: Type `typeof L` in console (should be "object")
+3. **Check map height**: Map container should have `height: 400px`
+4. **Network issues**: Some networks block OpenStreetMap tiles
+
+**Quick Fix - Add this to contact.html head:**
+```html
+<style>
+#map { 
+    min-height: 400px !important; 
+    height: 400px !important; 
+    background: #f0f0f0;
 }
+</style>
 ```
 
-### Adding New Pages
-1. Create HTML file following existing structure
-2. Update navigation in all pages
-3. Add page-specific JavaScript in `main.js`
-4. Update sitemap and SEO tags
+### **Deployment Still Failing**
+**If GitHub Pages deployment keeps failing:**
 
-## 🚀 Performance Optimization
+1. **Check repository is public** (or has Pages enabled for private)
+2. **Verify index.html exists** at root level ✓
+3. **No special characters** in file names
+4. **All linked files exist** (CSS, JS, images)
 
-### Built-in Optimizations
-- **Lazy Loading**: Images and maps load when needed
-- **Efficient Animations**: CSS transforms with GPU acceleration
-- **Minimal Dependencies**: Only essential libraries loaded
-- **Compressed Assets**: Minified CSS/JS in production
-- **Caching Headers**: Configured for static assets
-
-### Performance Metrics
-- **Lighthouse Score**: 95+ (all categories)
-- **First Contentful Paint**: <2s
-- **Time to Interactive**: <3s
-- **Mobile PageSpeed**: 90+
-
-## 🔒 Security Features
-
-- **Content Security Policy**: Headers configured
-- **reCAPTCHA v3**: Form spam protection
-- **Input Validation**: Client-side form validation
-- **No Backend Vulnerabilities**: Static-only architecture
-- **HTTPS Ready**: SSL/TLS encryption support
-
-## 🌍 Browser Support
-
-### Fully Supported
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
-
-### Graceful Degradation
-- Internet Explorer 11 (basic functionality)
-- Older mobile browsers (core features work)
-
-## 📊 Analytics & Tracking
-
-### Included Integrations
-- **Google Analytics 4**: Traffic and behavior tracking
-- **Tawk.to Live Chat**: Customer support
-- **Mailchimp**: Newsletter subscriptions
-- **reCAPTCHA**: Form security
-
-### Custom Events Tracked
-- Contact form submissions
-- Quote requests
-- Service page visits
-- Currency changes
-- Holiday banner interactions
-
-## 🔧 Development
-
-### Code Style
-- **HTML**: Semantic, accessible markup
-- **CSS**: BEM methodology, custom properties
-- **JavaScript**: ES6+, modular, documented
-- **Comments**: Comprehensive documentation
-
-### Testing Checklist
-- [ ] All forms validate properly
-- [ ] Mobile responsiveness
-- [ ] Cross-browser compatibility
-- [ ] Accessibility (screen readers)
-- [ ] Performance (Core Web Vitals)
-- [ ] SEO meta tags
-- [ ] Holiday banner automation
-- [ ] Currency conversion accuracy
-- [ ] Admin panel functionality
-
-## 🎆 Future Enhancements
-
-### Planned Features
-- [ ] Blog/News section with CMS
-- [ ] Project portfolio showcase
-- [ ] Client login portal
-- [ ] Multi-language support (i18n)
-- [ ] Advanced analytics dashboard
-- [ ] A/B testing framework
-- [ ] Progressive Web App (PWA) features
-
-### Integration Opportunities
-- [ ] CRM system integration
-- [ ] Payment gateway for quotes
-- [ ] Video testimonials
-- [ ] Live project tracking
-- [ ] Knowledge base/FAQ system
-
-## 📞 Support
-
-### Contact Information
-- **Email**: sales@anitechcs.com
-- **Support**: support@anitechcs.com
-- **Careers**: careers@anitechcs.com
-- **Phone**: +1 (555) 123-4567
-- **Address**: 555 Mission Street, San Francisco, CA 94105
-
-### Business Hours
-- **Monday - Friday**: 9:00 AM - 6:00 PM (PST)
-- **Saturday**: 10:00 AM - 4:00 PM (PST)
-- **Sunday**: Closed
-- **Emergency**: 24/7 for critical issues
-
-## 📄 License
-
-This project is proprietary and confidential. All rights reserved by AnitechCS.
-
-**Unauthorized copying, distribution, or modification is strictly prohibited.**
-
----
-
-## 🚀 Quick Deployment Commands
-
+**Alternative: Manual Pages Setup**
 ```bash
-# Deploy to Netlify
-netlify deploy --dir=. --prod
-
-# Deploy to Vercel
-vercel --prod
-
-# Deploy to AWS S3
-aws s3 sync . s3://your-bucket-name --delete
-aws cloudfront create-invalidation --distribution-id YOUR_ID --paths "/*"
-
-# Deploy to GitHub Pages
-git add .
-git commit -m "Deploy website"
-git push origin main
+1. Settings → Pages
+2. Source: "Deploy from a branch"
+3. Branch: "main"
+4. Folder: "/ (root)"
+5. Save
 ```
 
 ---
 
-**Built with ❤️ by AnitechCS Team**
+## 📞 **Support**
 
-*Empowering Businesses with Digital Brilliance since 2012*
+**For website inquiries:**
+- 📧 Email: [sales@anitechcs.com](mailto:sales@anitechcs.com)
+- 📞 Phone: +1 (555) 123-4567
+- 🌐 Live Site: [https://akshatkardak.github.io/IT-3/](https://akshatkardak.github.io/IT-3/)
+
+**For technical repository issues:**
+- 🐛 [Open an Issue](https://github.com/AkshatKardak/IT-3/issues)
+- 💬 [Discussions](https://github.com/AkshatKardak/IT-3/discussions)
+
+---
+
+## 🚀 **Deployment Status**
+
+- ✅ **Repository**: All files committed
+- ✅ **Workflow**: GitHub Actions configured
+- ⚙️ **Pages**: Enable in Settings → Pages
+- 🔄 **Auto-Deploy**: On every push to main
+- 🌐 **Live URL**: [https://akshatkardak.github.io/IT-3/](https://akshatkardak.github.io/IT-3/)
+
+**Next Steps:**
+1. Enable GitHub Pages in repository settings
+2. Re-run failed workflow if needed
+3. Your website will be live!
+
+---
+
+*Built with ❤️ for AnitechCS*
