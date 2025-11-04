@@ -3,355 +3,567 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - AnitechCS | Get Your Free Quote</title>
-    <meta name="description" content="Contact AnitechCS for web development, cloud hosting, and IT solutions. Get a free quote from our global team.">
+    <title>Contact AnitechCS - Get Your Free Quote Today</title>
+    <meta name="description" content="Contact AnitechCS for web development, cloud hosting, and IT services. Get a free quote today! Multiple contact options: email, phone, and office locations worldwide.">
+    <meta name="keywords" content="AnitechCS contact, free quote, web development consultation, IT services contact, customer support">
+    <meta name="author" content="AnitechCS">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     
-    <!-- reCAPTCHA API -->
-    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+    <!-- reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+    
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-    <!-- Holiday Banner -->
-    <div class="holiday-banner" id="holidayBanner">
-        <div class="container">
-            <span id="holidayMessage">Special Holiday Offer: Get 15% off on all services!</span>
-            <button class="close-banner" id="closeBanner">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    Anitech<span class="accent">CS</span>
+                </a>
+                
+                <ul class="nav-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a href="services.html" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html">Careers</a>
+                        <a href="careers.html" class="nav-link">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a href="contact.html" class="nav-link active">Contact</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
                     </li>
                 </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">&#9776;</button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(0,123,255,0.9) 0%, rgba(32,35,42,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h1>Get In Touch</h1>
-                    <p class="lead">Let's discuss how we can help transform your business</p>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 150px 0 100px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(32, 35, 42, 0.8));">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Get Your Free Quote</h1>
+                    <p class="reveal">Ready to transform your digital presence? Let's discuss your project!</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Form & Info -->
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <div class="contact-form reveal">
-                        <h3 class="mb-4">Send Us a Message</h3>
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name" class="form-label">Full Name *</label>
-                                    <input type="text" class="form-control" id="name" required>
+        </section>
+        
+        <!-- Contact Form & Info Section -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-lg-8">
+                        <div class="contact-form reveal">
+                            <h2 style="margin-bottom: 1.5rem;">Send Us a Message</h2>
+                            <p style="margin-bottom: 2rem; color: var(--text-light);">Fill out the form below and we'll get back to you within 24 hours. All fields marked with * are required.</p>
+                            
+                            <form id="contactForm" method="post" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="form-label">Full Name *</label>
+                                            <input type="text" class="form-control" id="name" name="name" required aria-describedby="nameHelp">
+                                            <small id="nameHelp" class="form-text text-muted">Enter your full name</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email</small>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email Address *</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
+                                            <small id="phoneHelp" class="form-text text-muted">Optional - for faster response</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="service" class="form-label">Service Interested In *</label>
+                                            <select class="form-control form-select" id="service" name="service" required>
+                                                <option value="">Select a service...</option>
+                                                <option value="website-development">Website Development</option>
+                                                <option value="cloud-hosting">Cloud Hosting</option>
+                                                <option value="maintenance-support">Maintenance & Support</option>
+                                                <option value="digital-transformation">Digital Transformation</option>
+                                                <option value="ecommerce">E-commerce Solution</option>
+                                                <option value="mobile-app">Mobile App Development</option>
+                                                <option value="consultation">Free Consultation</option>
+                                                <option value="other">Other (specify in message)</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone" class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone">
+                                
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company/Organization</label>
+                                    <input type="text" class="form-control" id="company" name="company" aria-describedby="companyHelp">
+                                    <small id="companyHelp" class="form-text text-muted">Optional - helps us understand your needs</small>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="service" class="form-label">Service Interested In</label>
-                                    <select class="form-select" id="service">
-                                        <option value="">Select a service</option>
-                                        <option value="website-development">Website Development</option>
-                                        <option value="cloud-hosting">Cloud Hosting</option>
-                                        <option value="maintenance">Maintenance & Support</option>
-                                        <option value="erp-integration">ERP Integration</option>
-                                        <option value="digital-transformation">Digital Transformation</option>
-                                        <option value="other">Other</option>
+                                
+                                <div class="form-group">
+                                    <label for="budget" class="form-label">Project Budget Range</label>
+                                    <select class="form-control form-select" id="budget" name="budget">
+                                        <option value="">Select budget range (optional)...</option>
+                                        <option value="under-1000">Under $1,000</option>
+                                        <option value="1000-5000">$1,000 - $5,000</option>
+                                        <option value="5000-10000">$5,000 - $10,000</option>
+                                        <option value="10000-25000">$10,000 - $25,000</option>
+                                        <option value="25000-50000">$25,000 - $50,000</option>
+                                        <option value="50000-plus">$50,000+</option>
+                                        <option value="discuss">Let's discuss</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message *</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                
+                                <div class="form-group">
+                                    <label for="timeline" class="form-label">Project Timeline</label>
+                                    <select class="form-control form-select" id="timeline" name="timeline">
+                                        <option value="">When do you need this completed?</option>
+                                        <option value="asap">As soon as possible</option>
+                                        <option value="1-month">Within 1 month</option>
+                                        <option value="2-3-months">2-3 months</option>
+                                        <option value="3-6-months">3-6 months</option>
+                                        <option value="6-months-plus">6+ months</option>
+                                        <option value="flexible">I'm flexible</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required aria-describedby="messageHelp" placeholder="Tell us about your project, goals, specific requirements, or any questions you have..."></textarea>
+                                    <small id="messageHelp" class="form-text text-muted">Please provide as much detail as possible to help us give you an accurate quote</small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for updates and insights
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> *
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- reCAPTCHA Notice -->
+                                <div class="recaptcha-notice" style="background: var(--light-gray); padding: 1rem; border-radius: var(--border-radius); margin: 1rem 0; font-size: 0.9rem; color: var(--text-light);">
+                                    <i class="fas fa-shield-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                                    This form is protected by reCAPTCHA. The Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                                    <br><small><em>Note: Server-side verification required in production environment.</em></small>
+                                </div>
+                                
+                                <div class="form-actions" style="display: flex; gap: 1rem; align-items: center; margin-top: 2rem;">
+                                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                                        <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                                        Send Message
+                                    </button>
+                                    <button type="reset" class="btn btn-outline" style="color: var(--text-muted); border-color: var(--border-color);">
+                                        <i class="fas fa-undo" style="margin-right: 0.5rem;"></i>
+                                        Clear Form
+                                    </button>
+                                    <div id="formStatus" style="margin-left: auto; font-size: 0.9rem;"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="col-lg-4">
+                        <div class="contact-info reveal">
+                            <h3 style="margin-bottom: 2rem;">Get In Touch</h3>
+                            
+                            <!-- Email Contacts -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>General Inquiries</strong>
+                                    <span><a href="mailto:sales@anitechcs.com">sales@anitechcs.com</a></span>
+                                </div>
                             </div>
                             
-                            <!-- reCAPTCHA v3 -->
-                            <input type="hidden" id="recaptchaToken" name="recaptcha_token">
-                            
-                            <div class="alert alert-info mb-4">
-                                <i class="fas fa-info-circle me-2"></i>
-                                <strong>Note:</strong> This is a frontend-only demonstration. In production, server-side verification is required for form submission and reCAPTCHA validation.
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>Technical Support</strong>
+                                    <span><a href="mailto:support@anitechcs.com">support@anitechcs.com</a></span>
+                                </div>
                             </div>
                             
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                                </button>
-                                <button type="button" id="mailtoFallback" class="btn btn-outline-secondary btn-lg">
-                                    <i class="fas fa-envelope me-2"></i>Use Email Client
-                                </button>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>Careers & HR</strong>
+                                    <span><a href="mailto:careers@anitechcs.com">careers@anitechcs.com</a></span>
+                                </div>
                             </div>
-                        </form>
+                            
+                            <!-- Phone & Address -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>Phone</strong>
+                                    <span>+1 (555) 123-4567</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>California Office</strong>
+                                    <span>555 Mission Street<br>San Francisco, CA 94105<br>United States</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Business Hours -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <strong>Business Hours (PST)</strong>
+                                    <span>
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                        Saturday: 10:00 AM - 4:00 PM<br>
+                                        Sunday: Closed
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Response Time -->
+                            <div class="card" style="margin-top: 2rem; background: linear-gradient(135deg, var(--primary-color), #0056b3); color: white; text-align: center;">
+                                <h4 style="color: white;">Response Time</h4>
+                                <p style="margin: 1rem 0;">We typically respond to inquiries within <strong>24 hours</strong> during business days.</p>
+                                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">Urgent matters: Call our emergency line</p>
+                            </div>
+                            
+                            <!-- Social Links -->
+                            <div style="margin-top: 2rem; text-align: center;">
+                                <h4>Follow Us</h4>
+                                <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+                                    <a href="https://linkedin.com/company/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://twitter.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://facebook.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Google Map Section -->
+        <section style="padding: 80px 0; background: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Visit Our Office</h2>
+                    <p class="section-subtitle reveal">Come see us at our California headquarters</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="map-container reveal">
+                            <!-- Google Maps will be loaded lazily -->
+                            <div style="background: var(--border-color); display: flex; align-items: center; justify-content: center; height: 400px; color: var(--text-muted);">
+                                <div style="text-align: center;">
+                                    <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                                    <p>Interactive map will load when you scroll to this section</p>
+                                    <small>555 Mission Street, San Francisco, CA 94105</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card reveal">
+                            <h3>Directions</h3>
+                            <p><strong>By Public Transportation:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>BART: Montgomery St Station (2-minute walk)</li>
+                                <li>Muni: Multiple bus lines serve Mission Street</li>
+                                <li>Metro: Montgomery Station</li>
+                            </ul>
+                            
+                            <p><strong>By Car:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Parking available in nearby garages</li>
+                                <li>Street parking (meter required)</li>
+                                <li>Visitor parking available</li>
+                            </ul>
+                            
+                            <p><strong>Nearby Landmarks:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Salesforce Tower</li>
+                                <li>Union Square</li>
+                                <li>Financial District</li>
+                            </ul>
+                            
+                            <div style="margin-top: 2rem; padding: 1rem; background: var(--light-gray); border-radius: var(--border-radius);">
+                                <p style="margin: 0; font-size: 0.9rem;"><strong>Visitor Policy:</strong> Please call ahead to schedule a meeting. ID required for building access.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+                    <p class="section-subtitle reveal">Quick answers to common questions</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8" style="margin: 0 auto;">
+                        <div class="faq-accordion reveal">
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> How quickly can you start my project?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>We typically can start new projects within 1-2 weeks after contract signing and initial payment. Rush projects may be accommodated with priority scheduling (additional fees may apply).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> Do you offer free consultations?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>Yes! We provide free 30-minute consultations to discuss your project requirements, timeline, and budget. This helps us provide you with an accurate quote and recommendations.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> What payment methods do you accept?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>We accept bank transfers, credit cards (Visa, MasterCard, American Express), PayPal, and cryptocurrency payments. Payment is typically split: 50% upfront and 50% upon completion.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> Do you work with clients worldwide?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>Absolutely! We serve clients globally with offices in 7 countries. We're experienced in working across different time zones and can accommodate various communication preferences and business hours.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> What happens after I submit this form?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>Within 24 hours, you'll receive a response from our team acknowledging your inquiry. We'll schedule a consultation call within 2-3 business days to discuss your project in detail and provide a customized quote.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Emergency Contact -->
+        <section style="background: var(--secondary-color); color: white; padding: 60px 0; text-align: center;">
+            <div class="container">
+                <div class="reveal">
+                    <h2 style="color: white; margin-bottom: 1rem;">Need Immediate Assistance?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.8);">For existing customers with urgent technical issues</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <a href="tel:+1-555-911-HELP" class="btn btn-primary">
+                            <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Emergency Line: +1 (555) 911-HELP
+                        </a>
+                        <a href="mailto:emergency@anitechcs.com" class="btn btn-outline" style="border-color: white; color: white;">
+                            <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> Emergency Email
+                        </a>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.7);">Available 24/7 for critical issues affecting live websites</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AnitechCS</h4>
+                    <p>Empowering businesses with innovative digital solutions since 2012. We deliver excellence in web development, cloud hosting, and comprehensive IT services.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
-                    <div class="contact-info reveal">
-                        <h3 class="mb-4">Contact Information</h3>
-                        
-                        <div class="mb-4">
-                            <h5><i class="fas fa-envelope text-primary me-2"></i>Email</h5>
-                            <p class="ms-4">
-                                <a href="mailto:careers@anitechcs.com">careers@anitechcs.com</a><br>
-                                <a href="mailto:sales@anitechcs.com">sales@anitechcs.com</a><br>
-                                <a href="mailto:support@anitechcs.com">support@anitechcs.com</a>
-                            </p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Headquarters</h5>
-                            <p class="ms-4">
-                                AnitechCS – California Office<br>
-                                555 Mission Street<br>
-                                San Francisco, California, USA<br>
-                                ZIP: 94105
-                            </p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h5><i class="fas fa-clock text-primary me-2"></i>Business Hours</h5>
-                            <p class="ms-4">
-                                Monday - Friday: 9:00 AM - 6:00 PM PST<br>
-                                Saturday: 10:00 AM - 2:00 PM PST<br>
-                                Sunday: Closed
-                            </p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h5><i class="fas fa-phone text-primary me-2"></i>Emergency Support</h5>
-                            <p class="ms-4">
-                                24/7 Support Available<br>
-                                <a href="tel:+1-555-0123">+1 (555) 0123</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <h3 class="text-center mb-5">Visit Our California Office</h3>
-                    <div class="map-container reveal">
-                        <!-- Google Maps Embed Placeholder -->
-                        <iframe 
-                            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=555+Mission+Street,San+Francisco,CA,94105" 
-                            width="100%" 
-                            height="400" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Offices -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Global Offices</h2>
-                    <p class="mb-5 reveal">We serve clients worldwide with teams across multiple time zones</p>
-                    
-                    <div class="global-presence reveal">
-                        <span class="global-badge">California</span>
-                        <span class="global-badge">Boston</span>
-                        <span class="global-badge">Montreal</span>
-                        <span class="global-badge">India</span>
-                        <span class="global-badge">Philippines</span>
-                        <span class="global-badge">Copenhagen</span>
-                        <span class="global-badge">Johannesburg</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>AnitechCS</h5>
-                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#pricing">Pricing</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Cloud Hosting</a></li>
-                        <li><a href="services.html">Maintenance & Support</a></li>
-                        <li><a href="services.html">ERP Integration</a></li>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#website-development">Website Development</a></li>
+                        <li><a href="services.html#cloud-hosting">Cloud Hosting</a></li>
+                        <li><a href="services.html#maintenance-support">Maintenance & Support</a></li>
+                        <li><a href="services.html#digital-transformation">Digital Transformation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Subscribe to get updates on our latest services and offers.</p>
-                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
                     </form>
+                    <p><small>By subscribing, you agree to our Privacy Policy.</small></p>
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnitechCS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
     
-    <!-- Contact Form Script -->
+    <!-- FAQ Accordion JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            const mailtoFallback = document.getElementById('mailtoFallback');
+            const faqQuestions = document.querySelectorAll('.faq-question');
             
-            // Generate reCAPTCHA token
-            function generateRecaptchaToken() {
-                return new Promise((resolve) => {
-                    if (typeof grecaptcha === 'undefined') {
-                        resolve('');
-                        return;
-                    }
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
                     
-                    grecaptcha.ready(function() {
-                        grecaptcha.execute('YOUR_SITE_KEY', {action: 'contact'}).then(function(token) {
-                            document.getElementById('recaptchaToken').value = token;
-                            resolve(token);
-                        }).catch(() => {
-                            resolve('');
+                    // Toggle current answer
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        icon.className = 'fas fa-plus';
+                    } else {
+                        // Close all other answers
+                        faqQuestions.forEach(q => {
+                            const a = q.nextElementSibling;
+                            const i = q.querySelector('i');
+                            a.style.display = 'none';
+                            i.className = 'fas fa-plus';
                         });
-                    });
+                        
+                        // Open current answer
+                        answer.style.display = 'block';
+                        icon.className = 'fas fa-minus';
+                    }
                 });
-            }
-            
-            // Form submission handler
-            contactForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                // Generate reCAPTCHA token
-                await generateRecaptchaToken();
-                
-                // Get form data
-                const formData = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    phone: document.getElementById('phone').value,
-                    service: document.getElementById('service').value,
-                    message: document.getElementById('message').value,
-                    recaptcha_token: document.getElementById('recaptchaToken').value
-                };
-                
-                // In a real implementation, you would send this to your server
-                // For frontend-only, we'll show a success message
-                alert('Thank you for your message! In a production environment, this would be sent to our server.\n\nFor now, please use the "Use Email Client" button to send your message.');
-                
-                // Reset form
-                contactForm.reset();
-                document.getElementById('recaptchaToken').value = '';
             });
-            
-            // Mailto fallback
-            mailtoFallback.addEventListener('click', function() {
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const service = document.getElementById('service').value;
-                const message = document.getElementById('message').value;
-                
-                const subject = `Contact Form: ${service || 'General Inquiry'}`;
-                const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-                
-                window.location.href = `mailto:sales@anitechcs.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            });
-            
-            // Generate initial reCAPTCHA token
-            generateRecaptchaToken();
         });
+    </script>
+    
+    <!-- Tawk.to Live Chat (Placeholder) -->
+    <script type="text/javascript">
+        // Replace PROPERTY_ID with actual Tawk.to property ID
+        /*
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/PROPERTY_ID/1234567890';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        */
     </script>
 </body>
 </html>
