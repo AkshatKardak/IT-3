@@ -3,272 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - AnitechCS | Global IT Solutions Provider</title>
-    <meta name="description" content="Learn about AnitechCS - founded in 2012, providing innovative IT solutions worldwide under leadership of Andrew Basil, Jimmy Mathew, and Mohmaded Rafik Alam.">
+    <title>About AnitechCS - Global IT Solutions Provider Since 2012</title>
+    <meta name="description" content="Learn about AnitechCS - Founded in November 2012 by Andrew Basil, Jimmy Mathew, and Mohmaded Rafik Alam. We're an innovation-driven global IT provider with offices worldwide.">
+    <meta name="keywords" content="AnitechCS about, IT company history, global IT provider, Andrew Basil, Jimmy Mathew, Mohmaded Rafik Alam">
+    <meta name="author" content="AnitechCS">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-    <!-- Holiday Banner -->
-    <div class="holiday-banner" id="holidayBanner">
-        <div class="container">
-            <span id="holidayMessage">Special Holiday Offer: Get 15% off on all services!</span>
-            <button class="close-banner" id="closeBanner">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    Anitech<span class="accent">CS</span>
+                </a>
+                
+                <ul class="nav-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About</a>
+                        <a href="about.html" class="nav-link active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a href="services.html" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html">Careers</a>
+                        <a href="careers.html" class="nav-link">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
                     </li>
                 </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">&#9776;</button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(32,35,42,0.9) 0%, rgba(0,123,255,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h1>About AnitechCS</h1>
-                    <p class="lead">Driving digital innovation since 2012</p>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 150px 0 100px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(32, 35, 42, 0.8));">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">About AnitechCS</h1>
+                    <p class="reveal">Innovation-driven global IT provider delivering excellence since 2012</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Company Overview -->
-    <section class="section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="section-title text-start">Our Story</h2>
-                    <p class="lead mb-4 reveal">
-                        Founded in November 2012, AnitechCS has grown from a startup with a vision to a global IT solutions provider driving digital transformation for businesses worldwide.
-                    </p>
-                    <p class="reveal">
-                        Our journey began with a simple mission: to empower businesses with cutting-edge technology solutions that drive growth and innovation. Today, we're proud to serve clients across multiple continents, delivering excellence in web development, cloud solutions, and digital transformation services.
-                    </p>
-                    <p class="reveal">
-                        What sets us apart is our unwavering commitment to customer satisfaction and our passion for innovation. We believe in building long-term partnerships with our clients, understanding their unique challenges, and delivering solutions that exceed expectations.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-image text-center reveal">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Team" class="img-fluid rounded shadow-lg">
+        </section>
+        
+        <!-- Company Overview -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="reveal">Our Story</h2>
+                        <p class="reveal">Founded in November 2012, AnitechCS emerged from a vision to bridge the gap between cutting-edge technology and practical business solutions. What started as a small team of passionate developers has evolved into a global IT solutions provider, serving clients across seven countries and multiple continents.</p>
+                        
+                        <p class="reveal">Our journey has been marked by continuous innovation and an unwavering commitment to customer satisfaction. We believe that technology should empower businesses, not complicate them. This philosophy has guided us through over a decade of growth, helping hundreds of businesses transform their digital presence and achieve their goals.</p>
+                        
+                        <p class="reveal">Today, AnitechCS stands as a testament to the power of vision, dedication, and collaborative excellence. We're not just service providers; we're partners in your success story.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Our Leadership</h2>
-                    <p class="mb-5 reveal">Meet the visionary leaders driving AnitechCS towards excellence and innovation.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-user-tie"></i>
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="background: linear-gradient(135deg, var(--primary-color), #0056b3); color: white; text-align: center;">
+                            <h3>By the Numbers</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                                <div>
+                                    <h4>13+</h4>
+                                    <p>Years of Excellence</p>
+                                </div>
+                                <div>
+                                    <h4>500+</h4>
+                                    <p>Projects Delivered</p>
+                                </div>
+                                <div>
+                                    <h4>7</h4>
+                                    <p>Global Offices</p>
+                                </div>
+                                <div>
+                                    <h4>99.9%</h4>
+                                    <p>Uptime Guarantee</p>
+                                </div>
+                            </div>
                         </div>
-                        <h5>Andrew Basil</h5>
-                        <p class="text-muted">Co-Founder & CEO</p>
-                        <p>Visionary leader with 15+ years in technology and business strategy</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h5>Jimmy Mathew</h5>
-                        <p class="text-muted">Co-Founder & CTO</p>
-                        <p>Technology expert specializing in cloud architecture and digital transformation</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h5>Mohmaded Rafik Alam</h5>
-                        <p class="text-muted">Co-Founder & COO</p>
-                        <p>Operations specialist ensuring seamless delivery and client satisfaction</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Our Services</h2>
-                    <p class="mb-5 reveal">Comprehensive IT solutions to drive your business forward</p>
+        </section>
+        
+        <!-- Leadership Team -->
+        <section style="background: var(--light-gray); padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Meet Our Leadership</h2>
+                    <p class="section-subtitle reveal">Visionary leaders driving innovation and excellence</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-laptop-code"></i>
+                
+                <div class="leadership-grid">
+                    <div class="leader-card reveal">
+                        <div class="leader-avatar" style="background: linear-gradient(135deg, #28a745, #20c997);">AB</div>
+                        <h4>Andrew Basil</h4>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">Co-Founder & CEO</h5>
+                        <p>With over 15 years of experience in technology leadership, Andrew brings strategic vision and operational excellence to AnitechCS. He oversees company strategy, client relationships, and business development across all global markets.</p>
+                        <div class="leader-specialties" style="margin-top: 1rem;">
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Strategic Planning</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Business Development</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Client Relations</span>
                         </div>
-                        <h5>Web Development</h5>
-                        <p>Custom websites and web applications built with cutting-edge technologies</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h5>Cloud Hosting</h5>
-                        <p>Scalable and secure cloud infrastructure solutions for businesses of all sizes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h5>ERP Integration</h5>
-                        <p>Seamless integration of enterprise resource planning systems</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card text-center p-4">
-                        <div class="card-icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h5>Digital Transformation</h5>
-                        <p>Comprehensive digital strategy and implementation services</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Offices -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Global Offices</h2>
-                    <p class="mb-5 reveal">Serving clients worldwide with local expertise and global capabilities</p>
                     
-                    <div class="global-presence reveal">
-                        <span class="global-badge">California</span>
-                        <span class="global-badge">Boston</span>
-                        <span class="global-badge">Montreal</span>
-                        <span class="global-badge">India</span>
-                        <span class="global-badge">Philippines</span>
-                        <span class="global-badge">Copenhagen</span>
-                        <span class="global-badge">Johannesburg</span>
+                    <div class="leader-card reveal">
+                        <div class="leader-avatar" style="background: linear-gradient(135deg, #007BFF, #0056b3);">JM</div>
+                        <h4>Jimmy Mathew</h4>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">Co-Founder & CTO</h5>
+                        <p>Jimmy leads our technical innovation and development teams. With expertise in full-stack development, cloud architecture, and emerging technologies, he ensures AnitechCS stays at the forefront of technological advancement.</p>
+                        <div class="leader-specialties" style="margin-top: 1rem;">
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Full-Stack Development</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Cloud Architecture</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Technical Innovation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-card reveal">
+                        <div class="leader-avatar" style="background: linear-gradient(135deg, #fd7e14, #e55100);">MR</div>
+                        <h4>Mohmaded Rafik Alam</h4>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">Co-Founder & COO</h5>
+                        <p>Rafik oversees daily operations, quality assurance, and project management across all our global offices. His operational expertise ensures seamless service delivery and maintains our high standards of quality and efficiency.</p>
+                        <div class="leader-specialties" style="margin-top: 1rem;">
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Operations Management</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Quality Assurance</span>
+                            <span class="badge" style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; margin: 0.25rem; border-radius: 4px; font-size: 0.8rem;">Project Management</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>AnitechCS</h5>
-                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </section>
+        
+        <!-- Services Overview -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">What We Do</h2>
+                    <p class="section-subtitle reveal">Comprehensive IT solutions for modern businesses</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card reveal slide-left" style="height: 100%; border-left: 4px solid var(--primary-color);">
+                            <div class="card-header">
+                                <i class="fas fa-code card-icon"></i>
+                                <h3 class="card-title">Web Development</h3>
+                            </div>
+                            <p class="card-text">From simple business websites to complex enterprise applications, we create custom web solutions that drive results. Our development team uses the latest technologies and follows best practices to ensure scalable, secure, and performant applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card reveal slide-right" style="height: 100%; border-left: 4px solid #28a745;">
+                            <div class="card-header">
+                                <i class="fas fa-cloud card-icon" style="color: #28a745;"></i>
+                                <h3 class="card-title">Cloud Hosting</h3>
+                            </div>
+                            <p class="card-text">Our robust cloud infrastructure provides reliable, scalable hosting solutions with guaranteed 99.9% uptime. We offer managed hosting services that let you focus on your business while we handle the technical complexities.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                
+                <div class="row" style="margin-top: 2rem;">
+                    <div class="col-md-6">
+                        <div class="card reveal slide-left" style="height: 100%; border-left: 4px solid #17a2b8;">
+                            <div class="card-header">
+                                <i class="fas fa-cogs card-icon" style="color: #17a2b8;"></i>
+                                <h3 class="card-title">ERP Integration</h3>
+                            </div>
+                            <p class="card-text">Streamline your business processes with our ERP integration services. We help businesses implement and customize ERP solutions that improve efficiency, reduce costs, and provide better visibility into operations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card reveal slide-right" style="height: 100%; border-left: 4px solid #fd7e14;">
+                            <div class="card-header">
+                                <i class="fas fa-digital-tachograph card-icon" style="color: #fd7e14;"></i>
+                                <h3 class="card-title">Digital Transformation</h3>
+                            </div>
+                            <p class="card-text">Navigate the digital landscape with confidence. Our digital transformation services help traditional businesses adopt modern technologies, automate processes, and create new revenue streams in the digital economy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Global Offices -->
+        <section style="background: var(--secondary-color); color: white; padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal" style="color: white;">Our Global Presence</h2>
+                    <p class="section-subtitle reveal" style="color: rgba(255,255,255,0.8);">Strategically located offices providing local expertise worldwide</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="office-card reveal" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--border-radius-large); margin-bottom: 2rem; text-align: center;">
+                            <i class="fas fa-building" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                            <h4>North America</h4>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> California, USA</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Boston, USA</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Montreal, Canada</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="office-card reveal" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--border-radius-large); margin-bottom: 2rem; text-align: center;">
+                            <i class="fas fa-globe-asia" style="font-size: 3rem; color: #28a745; margin-bottom: 1rem;"></i>
+                            <h4>Asia Pacific</h4>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: #28a745; margin-right: 0.5rem;"></i> Mumbai, India</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: #28a745; margin-right: 0.5rem;"></i> Manila, Philippines</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="office-card reveal" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: var(--border-radius-large); margin-bottom: 2rem; text-align: center;">
+                            <i class="fas fa-globe-europe" style="font-size: 3rem; color: #17a2b8; margin-bottom: 1rem;"></i>
+                            <h4>Europe & Africa</h4>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: #17a2b8; margin-right: 0.5rem;"></i> Copenhagen, Denmark</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-map-marker-alt" style="color: #17a2b8; margin-right: 0.5rem;"></i> Johannesburg, South Africa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values & Mission -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Our Values</h2>
+                    <p class="section-subtitle reveal">The principles that guide everything we do</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-lightbulb card-icon" style="color: #ffc107;"></i>
+                                <h3 class="card-title">Innovation</h3>
+                            </div>
+                            <p class="card-text">We constantly explore new technologies and methodologies to deliver cutting-edge solutions that give our clients a competitive advantage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-heart card-icon" style="color: #e91e63;"></i>
+                                <h3 class="card-title">Customer Satisfaction</h3>
+                            </div>
+                            <p class="card-text">Our clients' success is our success. We go above and beyond to ensure every project exceeds expectations and delivers measurable results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-shield-alt card-icon" style="color: #28a745;"></i>
+                                <h3 class="card-title">Quality & Reliability</h3>
+                            </div>
+                            <p class="card-text">We maintain the highest standards of quality in every project, ensuring reliable, secure, and scalable solutions that stand the test of time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 80px 0; text-align: center;">
+            <div class="container">
+                <h2 class="reveal" style="color: white; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+                <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Let's discuss how AnitechCS can help transform your business with innovative technology solutions</p>
+                <div class="reveal">
+                    <a href="contact.html" class="btn btn-light" style="margin-right: 1rem;">Get Free Consultation</a>
+                    <a href="services.html" class="btn btn-outline" style="border-color: white; color: white;">Explore Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AnitechCS</h4>
+                    <p>Empowering businesses with innovative digital solutions since 2012. We deliver excellence in web development, cloud hosting, and comprehensive IT services.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#pricing">Pricing</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Cloud Hosting</a></li>
-                        <li><a href="services.html">Maintenance & Support</a></li>
-                        <li><a href="services.html">ERP Integration</a></li>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#website-development">Website Development</a></li>
+                        <li><a href="services.html#cloud-hosting">Cloud Hosting</a></li>
+                        <li><a href="services.html#maintenance-support">Maintenance & Support</a></li>
+                        <li><a href="services.html#digital-transformation">Digital Transformation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Subscribe to get updates on our latest services and offers.</p>
-                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
                     </form>
+                    <p><small>By subscribing, you agree to our Privacy Policy.</small></p>
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnitechCS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- Tawk.to Live Chat (Placeholder) -->
+    <script type="text/javascript">
+        // Replace PROPERTY_ID with actual Tawk.to property ID
+        /*
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/PROPERTY_ID/1234567890';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        */
+    </script>
 </body>
 </html>
