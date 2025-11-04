@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing - AnitechCS | Web Development, Cloud Hosting</title>
+    <meta name="description" content="Explore AnitechCS services including website development, cloud hosting, maintenance & support. Competitive pricing with holiday discounts and multi-currency support.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Holiday Banner -->
+    <div class="holiday-banner" id="holidayBanner">
+        <div class="container">
+            <span id="holidayMessage">Special Holiday Offer: Get 15% off on all services!</span>
+            <button class="close-banner" id="closeBanner">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,123,255,0.9) 0%, rgba(32,35,42,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1>Our Services</h1>
+                    <p class="lead">Comprehensive IT solutions with transparent pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currency Selector -->
+    <section class="section bg-light pricing-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Pricing & Packages</h2>
+                    <p class="mb-4 reveal">All prices are in USD. Convert to your local currency below.</p>
+                    
+                    <div class="currency-selector reveal">
+                        <div class="row g-3 align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <label for="currencySelect" class="form-label fw-bold">Currency:</label>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" id="currencySelect">
+                                    <option value="AUTO">AUTO (by location)</option>
+                                    <option value="USD" selected>USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                    <option value="CAD">CAD (C$)</option>
+                                    <option value="INR">INR (₹)</option>
+                                    <option value="PHP">PHP (₱)</option>
+                                    <option value="ZAR">ZAR (R)</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="discountToggle">
+                                    <label class="form-check-label fw-bold" for="discountToggle">
+                                        Apply 15% Holiday Discount
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-3 reveal" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Holiday Discount:</strong> Flat 15% off during Thanksgiving, Christmas, and New Year Week. Prices update automatically during these periods.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development Pricing -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Website Development</h2>
+                    <p class="reveal">Custom web solutions tailored to your business needs and goals</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Basic Website</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="basicPrice">$499</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">5 Pages</li>
+                            <li class="mb-2">Responsive Design</li>
+                            <li class="mb-2">Basic SEO</li>
+                            <li class="mb-2">Contact Form</li>
+                            <li class="mb-2">1 Month Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Corporate Website</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="corporatePrice">$999</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Up to 15 Pages</li>
+                            <li class="mb-2">Custom Design</li>
+                            <li class="mb-2">Advanced SEO</li>
+                            <li class="mb-2">CMS Integration</li>
+                            <li class="mb-2">3 Months Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4 featured">
+                        <h5>E-commerce Website</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="ecommercePrice">$1,499</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Online Store</li>
+                            <li class="mb-2">Payment Gateway</li>
+                            <li class="mb-2">Inventory Management</li>
+                            <li class="mb-2">Product Catalog</li>
+                            <li class="mb-2">6 Months Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Enterprise Solution</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="enterprisePrice">$2,999+</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Custom Requirements</li>
+                            <li class="mb-2">Scalable Architecture</li>
+                            <li class="mb-2">API Integration</li>
+                            <li class="mb-2">Advanced Features</li>
+                            <li class="mb-2">1 Year Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Hosting Pricing -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Cloud Hosting & Maintenance</h2>
+                    <p class="reveal">Reliable and scalable cloud infrastructure with comprehensive maintenance</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Basic Hosting</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="hostingBasicPrice">$15/month</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">5 GB Storage</li>
+                            <li class="mb-2">50 GB Bandwidth</li>
+                            <li class="mb-2">99.9% Uptime</li>
+                            <li class="mb-2">SSL Certificate</li>
+                            <li class="mb-2">Email Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4 featured">
+                        <h5>Business Cloud</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="hostingBusinessPrice">$49/month</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">50 GB Storage</li>
+                            <li class="mb-2">Unlimited Bandwidth</li>
+                            <li class="mb-2">99.95% Uptime</li>
+                            <li class="mb-2">Advanced SSL</li>
+                            <li class="mb-2">Priority Support</li>
+                        </ul>
+                        <div class="alert alert-success mt-3">
+                            <i class="fas fa-gift me-2"></i>
+                            <strong>Holiday Offer:</strong> 2 months free on annual plan
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Enterprise Cloud</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="hostingEnterprisePrice">$99/month</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Unlimited Storage</li>
+                            <li class="mb-2">Unlimited Bandwidth</li>
+                            <li class="mb-2">99.99% Uptime</li>
+                            <li class="mb-2">Dedicated SSL</li>
+                            <li class="mb-2">24/7 Premium Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance & Security Pricing -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Website Maintenance & Security</h2>
+                    <p class="reveal">Keep your website secure, updated, and performing at its best</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4">
+                        <h5>Monthly Maintenance</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="maintenanceMonthlyPrice">$59/month</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Regular Updates</li>
+                            <li class="mb-2">Security Monitoring</li>
+                            <li class="mb-2">Backup Management</li>
+                            <li class="mb-2">Performance Optimization</li>
+                            <li class="mb-2">Basic Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-primary">Subscribe</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4 reveal">
+                    <div class="card pricing-card text-center p-4 featured">
+                        <h5>Annual Maintenance</h5>
+                        <div class="price display-4 fw-bold text-primary my-3" id="maintenanceAnnualPrice">$499/year</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">All Monthly Features</li>
+                            <li class="mb-2">Priority Support</li>
+                            <li class="mb-2">Advanced Security</li>
+                            <li class="mb-2">Emergency Response</li>
+                            <li class="mb-2">2 Free Months</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Save 30%</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready to Transform Your Digital Presence?</h2>
+                    <p class="lead mb-4">Get a free consultation and quote tailored to your specific needs.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg">Get Your Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>AnitechCS</h5>
+                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Cloud Hosting</a></li>
+                        <li><a href="services.html">Maintenance & Support</a></li>
+                        <li><a href="services.html">ERP Integration</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on our latest services and offers.</p>
+                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pricing.js"></script>
+</body>
+</html>

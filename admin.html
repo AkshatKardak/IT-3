@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - AnitechCS</title>
+    <meta name="description" content="Admin panel for managing AnitechCS website content and settings">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Header -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(32,35,42,0.9) 0%, rgba(0,123,255,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1>Admin Panel</h1>
+                    <p class="lead">Manage website content and settings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Status Alert -->
+                    <div class="alert alert-info mb-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Frontend-Only Mode:</strong> All changes are saved to browser localStorage. 
+                        To reset all settings, use the "Clear All Data" button below.
+                    </div>
+
+                    <!-- Holiday Banner Settings -->
+                    <div class="admin-panel reveal">
+                        <h3 class="mb-4">Holiday Banner Settings</h3>
+                        <div class="admin-section">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="bannerText" class="form-label">Banner Text</label>
+                                    <input type="text" class="form-control" id="bannerText" placeholder="Special Holiday Offer: Get 15% off on all services!">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Banner Controls</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="autoEnableBanner">
+                                        <label class="form-check-label" for="autoEnableBanner">
+                                            Auto-enable during holidays
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="forceShowBanner">
+                                        <label class="form-check-label" for="forceShowBanner">
+                                            Force show banner (override dates)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="saveBannerSettings">
+                                <i class="fas fa-save me-2"></i>Save Banner Settings
+                            </button>
+                        </div>
+
+                        <!-- Testimonials Editor -->
+                        <div class="admin-section">
+                            <h4 class="mb-3">Testimonials Editor</h4>
+                            <div class="mb-3">
+                                <label for="testimonialsText" class="form-label">
+                                    Testimonials (one per line, format: "quote — name")
+                                </label>
+                                <textarea class="form-control json-textarea" id="testimonialsText" rows="6" placeholder="AnitechCS transformed our digital presence completely. Their expertise in web development is unmatched! — Sarah Johnson, TechCorp Inc.&#10;Outstanding cloud hosting services with 99.9% uptime. The support team is always responsive and helpful. — Michael Chen, Global Retail"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="saveTestimonials">
+                                <i class="fas fa-save me-2"></i>Save Testimonials
+                            </button>
+                        </div>
+
+                        <!-- Currency Rates -->
+                        <div class="admin-section">
+                            <h4 class="mb-3">Currency Exchange Rates</h4>
+                            <p class="text-muted mb-3">Set fallback exchange rates (base: USD = 1)</p>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="rateINR" class="form-label">USD to INR</label>
+                                    <input type="number" step="0.01" class="form-control" id="rateINR" placeholder="83.25">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="rateEUR" class="form-label">USD to EUR</label>
+                                    <input type="number" step="0.01" class="form-control" id="rateEUR" placeholder="0.92">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="rateGBP" class="form-label">USD to GBP</label>
+                                    <input type="number" step="0.01" class="form-control" id="rateGBP" placeholder="0.79">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="rateCAD" class="form-label">USD to CAD</label>
+                                    <input type="number" step="0.01" class="form-control" id="rateCAD" placeholder="1.36">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ratePHP" class="form-label">USD to PHP</label>
+                                    <input type="number" step="0.01" class="form-control" id="ratePHP" placeholder="56.23">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="rateZAR" class="form-label">USD to ZAR</label>
+                                    <input type="number" step="0.01" class="form-control" id="rateZAR" placeholder="18.75">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="saveCurrencyRates">
+                                <i class="fas fa-save me-2"></i>Save Currency Rates
+                            </button>
+                        </div>
+
+                        <!-- Import/Export -->
+                        <div class="admin-section">
+                            <h4 class="mb-3">Import/Export Settings</h4>
+                            <div class="mb-3">
+                                <label for="jsonData" class="form-label">JSON Data</label>
+                                <textarea class="form-control json-textarea" id="jsonData" rows="6" placeholder='{"holidayBanner": {}, "testimonials": [], "currencyRates": {}}'></textarea>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-primary" id="exportSettings">
+                                    <i class="fas fa-download me-2"></i>Export Settings
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" id="importSettings">
+                                    <i class="fas fa-upload me-2"></i>Import Settings
+                                </button>
+                                <button type="button" class="btn btn-outline-danger" id="clearAllData">
+                                    <i class="fas fa-trash me-2"></i>Clear All Data
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Current Settings Display -->
+                        <div class="admin-section">
+                            <h4 class="mb-3">Current Settings</h4>
+                            <div class="card">
+                                <div class="card-body">
+                                    <pre id="currentSettings" class="mb-0"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>AnitechCS</h5>
+                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Cloud Hosting</a></li>
+                        <li><a href="services.html">Maintenance & Support</a></li>
+                        <li><a href="services.html">ERP Integration</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on our latest services and offers.</p>
+                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Admin Script -->
+    <script>
+        class AdminPanel {
+            constructor() {
+                this.settingsKey = 'anitechAdminSettings';
+                this.init();
+            }
+
+            init() {
+                this.loadSettings();
+                this.setupEventListeners();
+                this.updateCurrentSettingsDisplay();
+            }
+
+            loadSettings() {
+                const settings = this.getSettings();
+                
+                // Load holiday banner settings
+                if (settings.holidayBanner) {
+                    document.getElementById('bannerText').value = settings.holidayBanner.customText || '';
+                    document.getElementById('autoEnableBanner').checked = !settings.holidayBanner.disabled;
+                    document.getElementById('forceShowBanner').checked = settings.holidayBanner.forceShow || false;
+                }
+
+                // Load testimonials
+                if (settings.testimonials) {
+                    document.getElementById('testimonialsText').value = settings.testimonials.join('\n');
+                }
+
+                // Load currency rates
+                if (settings.currencyRates) {
+                    document.getElementById('rateINR').value = settings.currencyRates.INR || '';
+                    document.getElementById('rateEUR').value = settings.currencyRates.EUR || '';
+                    document.getElementById('rateGBP').value = settings.currencyRates.GBP || '';
+                    document.getElementById('rateCAD').value = settings.currencyRates.CAD || '';
+                    document.getElementById('ratePHP').value = settings.currencyRates.PHP || '';
+                    document.getElementById('rateZAR').value = settings.currencyRates.ZAR || '';
+                }
+            }
+
+            getSettings() {
+                return JSON.parse(localStorage.getItem(this.settingsKey) || '{}');
+            }
+
+            saveSettings(settings) {
+                localStorage.setItem(this.settingsKey, JSON.stringify(settings));
+                this.updateCurrentSettingsDisplay();
+                this.showAlert('Settings saved successfully!', 'success');
+            }
+
+            setupEventListeners() {
+                // Holiday banner settings
+                document.getElementById('saveBannerSettings').addEventListener('click', () => {
+                    const settings = this.getSettings();
+                    settings.holidayBanner = {
+                        customText: document.getElementById('bannerText').value,
+                        disabled: !document.getElementById('autoEnableBanner').checked,
+                        forceShow: document.getElementById('forceShowBanner').checked
+                    };
+                    this.saveSettings(settings);
+                });
+
+                // Testimonials
+                document.getElementById('saveTestimonials').addEventListener('click', () => {
+                    const testimonialsText = document.getElementById('testimonialsText').value;
+                    const testimonials = testimonialsText.split('\n').filter(line => line.trim());
+                    
+                    const settings = this.getSettings();
+                    settings.testimonials = testimonials;
+                    this.saveSettings(settings);
+                });
+
+                // Currency rates
+                document.getElementById('saveCurrencyRates').addEventListener('click', () => {
+                    const settings = this.getSettings();
+                    settings.currencyRates = {
+                        INR: parseFloat(document.getElementById('rateINR').value) || 83.25,
+                        EUR: parseFloat(document.getElementById('rateEUR').value) || 0.92,
+                        GBP: parseFloat(document.getElementById('rateGBP').value) || 0.79,
+                        CAD: parseFloat(document.getElementById('rateCAD').value) || 1.36,
+                        PHP: parseFloat(document.getElementById('ratePHP').value) || 56.23,
+                        ZAR: parseFloat(document.getElementById('rateZAR').value) || 18.75
+                    };
+                    this.saveSettings(settings);
+                });
+
+                // Export/Import
+                document.getElementById('exportSettings').addEventListener('click', () => {
+                    const settings = this.getSettings();
+                    document.getElementById('jsonData').value = JSON.stringify(settings, null, 2);
+                    this.showAlert('Settings exported to JSON!', 'success');
+                });
+
+                document.getElementById('importSettings').addEventListener('click', () => {
+                    try {
+                        const jsonData = document.getElementById('jsonData').value;
+                        const settings = JSON.parse(jsonData);
+                        this.saveSettings(settings);
+                        this.loadSettings(); // Reload the form with new settings
+                        this.showAlert('Settings imported successfully!', 'success');
+                    } catch (error) {
+                        this.showAlert('Invalid JSON data!', 'danger');
+                    }
+                });
+
+                document.getElementById('clearAllData').addEventListener('click', () => {
+                    if (confirm('Are you sure you want to clear all admin settings? This cannot be undone.')) {
+                        localStorage.removeItem(this.settingsKey);
+                        localStorage.removeItem('holidayBannerDismissed');
+                        this.loadSettings(); // Reset form to defaults
+                        this.updateCurrentSettingsDisplay();
+                        this.showAlert('All data cleared!', 'success');
+                    }
+                });
+            }
+
+            updateCurrentSettingsDisplay() {
+                const settings = this.getSettings();
+                document.getElementById('currentSettings').textContent = JSON.stringify(settings, null, 2);
+            }
+
+            showAlert(message, type) {
+                // Create alert element
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+                alertDiv.innerHTML = `
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                // Insert at the top of admin panel
+                const adminPanel = document.querySelector('.admin-panel');
+                adminPanel.insertBefore(alertDiv, adminPanel.firstChild);
+                
+                // Auto remove after 5 seconds
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 5000);
+            }
+        }
+
+        // Initialize admin panel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new AdminPanel();
+        });
+    </script>
+</body>
+</html>
