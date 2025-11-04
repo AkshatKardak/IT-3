@@ -3,362 +3,498 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services & Pricing - AnitechCS | Web Development, Cloud Hosting</title>
-    <meta name="description" content="Explore AnitechCS services including website development, cloud hosting, maintenance & support. Competitive pricing with holiday discounts and multi-currency support.">
+    <title>Services & Pricing - AnitechCS IT Solutions</title>
+    <meta name="description" content="AnitechCS Services: Website Development starting at $499, Cloud Hosting from $15/month, Maintenance & Support. Holiday special: 15% off all services. Regional pricing available.">
+    <meta name="keywords" content="web development pricing, cloud hosting cost, website maintenance, IT services, AnitechCS pricing">
+    <meta name="author" content="AnitechCS">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-    <!-- Holiday Banner -->
-    <div class="holiday-banner" id="holidayBanner">
-        <div class="container">
-            <span id="holidayMessage">Special Holiday Offer: Get 15% off on all services!</span>
-            <button class="close-banner" id="closeBanner">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand logo" href="index.html">Anitech<span>CS</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    Anitech<span class="accent">CS</span>
+                </a>
+                
+                <ul class="nav-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Services</a>
+                        <a href="services.html" class="nav-link active">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html">Careers</a>
+                        <a href="careers.html" class="nav-link">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
                     </li>
                 </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">&#9776;</button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(0,123,255,0.9) 0%, rgba(32,35,42,0.9) 100%); padding: 8rem 0 4rem; margin-top: 76px;">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h1>Our Services</h1>
-                    <p class="lead">Comprehensive IT solutions with transparent pricing</p>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 150px 0 100px; background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(32, 35, 42, 0.8));">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Services & Pricing</h1>
+                    <p class="reveal">Comprehensive IT solutions with transparent pricing</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Currency Selector -->
-    <section class="section bg-light pricing-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Pricing & Packages</h2>
-                    <p class="mb-4 reveal">All prices are in USD. Convert to your local currency below.</p>
+        </section>
+        
+        <!-- Currency Controls -->
+        <section style="padding: 40px 0 0; background: var(--light-gray);">
+            <div class="container">
+                <div class="currency-controls reveal">
+                    <!-- Currency controls will be dynamically generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Website Development Services -->
+        <section id="website-development" style="padding: 80px 0; background: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Website Development</h2>
+                    <p class="section-subtitle reveal">Custom web solutions built with modern technologies</p>
+                </div>
+                
+                <div class="row" style="margin-bottom: 3rem;">
+                    <div class="col-lg-6">
+                        <div class="card reveal slide-left" style="height: 100%;">
+                            <h3><i class="fas fa-laptop-code" style="color: var(--primary-color); margin-right: 1rem;"></i>What We Build</h3>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Business Websites</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> E-commerce Platforms</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Web Applications</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Content Management Systems</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Progressive Web Apps</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Enterprise Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
                     
-                    <div class="currency-selector reveal">
-                        <div class="row g-3 align-items-center justify-content-center">
-                            <div class="col-auto">
-                                <label for="currencySelect" class="form-label fw-bold">Currency:</label>
+                    <div class="col-lg-6">
+                        <div class="card reveal slide-right" style="height: 100%;">
+                            <h3><i class="fas fa-tools" style="color: var(--primary-color); margin-right: 1rem;"></i>Technologies We Use</h3>
+                            <div class="tech-badges" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">AWS</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Git</span>
                             </div>
-                            <div class="col-auto">
-                                <select class="form-select" id="currencySelect">
-                                    <option value="AUTO">AUTO (by location)</option>
-                                    <option value="USD" selected>USD ($)</option>
-                                    <option value="EUR">EUR (€)</option>
-                                    <option value="GBP">GBP (£)</option>
-                                    <option value="CAD">CAD (C$)</option>
-                                    <option value="INR">INR (₹)</option>
-                                    <option value="PHP">PHP (₱)</option>
-                                    <option value="ZAR">ZAR (R)</option>
-                                </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid website-pricing reveal">
+                    <!-- Website development pricing will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cloud Hosting Services -->
+        <section id="cloud-hosting" style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Cloud Hosting & Infrastructure</h2>
+                    <p class="section-subtitle reveal">Reliable, scalable hosting solutions with 99.9% uptime</p>
+                </div>
+                
+                <div class="row" style="margin-bottom: 3rem;">
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-server card-icon" style="color: #28a745;"></i>
+                                <h3 class="card-title">High Performance</h3>
                             </div>
-                            <div class="col-auto">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="discountToggle">
-                                    <label class="form-check-label fw-bold" for="discountToggle">
-                                        Apply 15% Holiday Discount
-                                    </label>
+                            <p class="card-text">SSD storage, CDN integration, and optimized server configurations for lightning-fast performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-shield-alt card-icon" style="color: #17a2b8;"></i>
+                                <h3 class="card-title">Enterprise Security</h3>
+                            </div>
+                            <p class="card-text">SSL certificates, DDoS protection, regular security updates, and comprehensive backup solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card reveal" style="text-align: center; height: 100%;">
+                            <div class="card-header">
+                                <i class="fas fa-headset card-icon" style="color: #fd7e14;"></i>
+                                <h3 class="card-title">24/7 Support</h3>
+                            </div>
+                            <p class="card-text">Round-the-clock technical support with average response time under 30 minutes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid hosting-pricing reveal">
+                    <!-- Cloud hosting pricing will be dynamically generated -->
+                </div>
+                
+                <div class="card reveal" style="background: linear-gradient(135deg, #28a745, #20c997); color: white; text-align: center; margin-top: 3rem;">
+                    <h3>Special Holiday Offer</h3>
+                    <p style="font-size: 1.2rem; margin: 1rem 0;">Get <strong>2 months FREE</strong> when you sign up for any annual hosting plan!</p>
+                    <p><small>Valid through New Year. Terms and conditions apply.</small></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Maintenance & Support Services -->
+        <section id="maintenance-support" style="padding: 80px 0; background: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Website Maintenance & Security</h2>
+                    <p class="section-subtitle reveal">Keep your website secure, updated, and performing optimally</p>
+                </div>
+                
+                <div class="row" style="margin-bottom: 3rem;">
+                    <div class="col-lg-6">
+                        <div class="card reveal slide-left" style="height: 100%;">
+                            <h3><i class="fas fa-cogs" style="color: var(--primary-color); margin-right: 1rem;"></i>What's Included</h3>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Regular Security Updates</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Content Updates & Changes</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Performance Optimization</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Backup & Recovery</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Uptime Monitoring</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 0.5rem;"></i> Technical Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card reveal slide-right" style="height: 100%;">
+                            <h3><i class="fas fa-chart-line" style="color: var(--primary-color); margin-right: 1rem;"></i>Monthly Reports</h3>
+                            <p>Receive detailed monthly reports including:</p>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-chart-bar" style="color: #007BFF; margin-right: 0.5rem;"></i> Website Performance Analytics</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-shield-alt" style="color: #007BFF; margin-right: 0.5rem;"></i> Security Scan Results</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-tachometer-alt" style="color: #007BFF; margin-right: 0.5rem;"></i> Page Speed Insights</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-search" style="color: #007BFF; margin-right: 0.5rem;"></i> SEO Health Check</li>
+                                <li style="margin: 0.5rem 0;"><i class="fas fa-tasks" style="color: #007BFF; margin-right: 0.5rem;"></i> Tasks Completed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid maintenance-pricing reveal">
+                    <!-- Maintenance pricing will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Digital Transformation Services -->
+        <section id="digital-transformation" style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Digital Transformation</h2>
+                    <p class="section-subtitle reveal">Modernize your business processes with cutting-edge technology</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-digital-tachograph card-icon"></i>
+                            <h3 class="card-title">Process Automation</h3>
+                        </div>
+                        <p class="card-text">Streamline your business operations with intelligent automation solutions that reduce manual work and improve efficiency.</p>
+                        <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Workflow Automation</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Document Management</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> CRM Integration</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-cloud-upload-alt card-icon"></i>
+                            <h3 class="card-title">Cloud Migration</h3>
+                        </div>
+                        <p class="card-text">Move your business to the cloud with our comprehensive migration services, ensuring minimal downtime and maximum security.</p>
+                        <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Infrastructure Assessment</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Seamless Migration</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Post-Migration Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-mobile-alt card-icon"></i>
+                            <h3 class="card-title">Mobile Solutions</h3>
+                        </div>
+                        <p class="card-text">Extend your reach with custom mobile applications and responsive web solutions designed for the mobile-first world.</p>
+                        <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Native Mobile Apps</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Progressive Web Apps</li>
+                            <li><i class="fas fa-check" style="color: #28a745; margin-right: 0.5rem;"></i> Mobile-First Design</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="card reveal" style="background: var(--secondary-color); color: white; text-align: center; margin-top: 3rem; padding: 3rem;">
+                    <h3 style="color: white;">Custom Solutions Available</h3>
+                    <p style="font-size: 1.2rem; margin: 1rem 0; color: rgba(255,255,255,0.9);">Need something specific? We create custom digital solutions tailored to your unique business requirements.</p>
+                    <a href="contact.html" class="btn btn-primary">Discuss Your Project</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Holiday Discount Banner -->
+        <section style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; padding: 60px 0; text-align: center;">
+            <div class="container">
+                <div class="reveal">
+                    <h2 style="color: white; margin-bottom: 1rem;">🎉 Holiday Special Offer! 🎁</h2>
+                    <p style="font-size: 1.3rem; margin-bottom: 2rem;">Get <strong>15% OFF</strong> all services during Thanksgiving, Christmas & New Year Week</p>
+                    <p style="margin-bottom: 2rem;">Use the pricing toggle above to see discounted rates. Offer valid through January 1st, 2026.</p>
+                    <a href="contact.html" class="btn btn-light">Claim Your Discount</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section style="padding: 80px 0; background: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+                    <p class="section-subtitle reveal">Common questions about our services and pricing</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8" style="margin: 0 auto;">
+                        <div class="faq-accordion reveal">
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> What's included in the Basic Website package?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>Our Basic Website package includes up to 5 pages, responsive design, basic SEO optimization, contact form, social media integration, and 30 days of support after launch.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> How does currency conversion work?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>We automatically detect your location and display prices in your local currency using live exchange rates. You can also manually select your preferred currency using the dropdown above. All base prices are in USD.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> What's your refund policy?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>We offer a 30-day money-back guarantee for all our services. If you're not satisfied with our work, we'll provide a full refund within the first 30 days of project start.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" style="margin-bottom: 1rem; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-light);">
+                                <h3 class="faq-question" style="background: var(--primary-color); color: white; padding: 1rem; margin: 0; cursor: pointer;">
+                                    <i class="fas fa-plus"></i> Do you provide ongoing support?
+                                </h3>
+                                <div class="faq-answer" style="padding: 1.5rem; display: none;">
+                                    <p>Yes! All our packages include initial support, and we offer comprehensive maintenance packages for ongoing support, updates, and security monitoring. Our maintenance plans start at $59/month.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="alert alert-info mt-3 reveal" role="alert">
-                        <i class="fas fa-info-circle me-2"></i>
-                        <strong>Holiday Discount:</strong> Flat 15% off during Thanksgiving, Christmas, and New Year Week. Prices update automatically during these periods.
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Website Development Pricing -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Website Development</h2>
-                    <p class="reveal">Custom web solutions tailored to your business needs and goals</p>
+        </section>
+        
+        <!-- CTA Section -->
+        <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 80px 0; text-align: center;">
+            <div class="container">
+                <h2 class="reveal" style="color: white; margin-bottom: 1rem;">Ready to Get Started?</h2>
+                <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Get a free consultation and detailed quote for your project</p>
+                <div class="reveal">
+                    <a href="contact.html" class="btn btn-light" style="margin-right: 1rem;">Get Free Quote</a>
+                    <a href="contact.html" class="btn btn-outline" style="border-color: white; color: white;">Schedule Consultation</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Basic Website</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="basicPrice">$499</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">5 Pages</li>
-                            <li class="mb-2">Responsive Design</li>
-                            <li class="mb-2">Basic SEO</li>
-                            <li class="mb-2">Contact Form</li>
-                            <li class="mb-2">1 Month Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Corporate Website</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="corporatePrice">$999</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">Up to 15 Pages</li>
-                            <li class="mb-2">Custom Design</li>
-                            <li class="mb-2">Advanced SEO</li>
-                            <li class="mb-2">CMS Integration</li>
-                            <li class="mb-2">3 Months Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4 featured">
-                        <h5>E-commerce Website</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="ecommercePrice">$1,499</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">Online Store</li>
-                            <li class="mb-2">Payment Gateway</li>
-                            <li class="mb-2">Inventory Management</li>
-                            <li class="mb-2">Product Catalog</li>
-                            <li class="mb-2">6 Months Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Enterprise Solution</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="enterprisePrice">$2,999+</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">Custom Requirements</li>
-                            <li class="mb-2">Scalable Architecture</li>
-                            <li class="mb-2">API Integration</li>
-                            <li class="mb-2">Advanced Features</li>
-                            <li class="mb-2">1 Year Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Contact Sales</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cloud Hosting Pricing -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Cloud Hosting & Maintenance</h2>
-                    <p class="reveal">Reliable and scalable cloud infrastructure with comprehensive maintenance</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Basic Hosting</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="hostingBasicPrice">$15/month</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">5 GB Storage</li>
-                            <li class="mb-2">50 GB Bandwidth</li>
-                            <li class="mb-2">99.9% Uptime</li>
-                            <li class="mb-2">SSL Certificate</li>
-                            <li class="mb-2">Email Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4 featured">
-                        <h5>Business Cloud</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="hostingBusinessPrice">$49/month</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">50 GB Storage</li>
-                            <li class="mb-2">Unlimited Bandwidth</li>
-                            <li class="mb-2">99.95% Uptime</li>
-                            <li class="mb-2">Advanced SSL</li>
-                            <li class="mb-2">Priority Support</li>
-                        </ul>
-                        <div class="alert alert-success mt-3">
-                            <i class="fas fa-gift me-2"></i>
-                            <strong>Holiday Offer:</strong> 2 months free on annual plan
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Enterprise Cloud</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="hostingEnterprisePrice">$99/month</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">Unlimited Storage</li>
-                            <li class="mb-2">Unlimited Bandwidth</li>
-                            <li class="mb-2">99.99% Uptime</li>
-                            <li class="mb-2">Dedicated SSL</li>
-                            <li class="mb-2">24/7 Premium Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Maintenance & Security Pricing -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">Website Maintenance & Security</h2>
-                    <p class="reveal">Keep your website secure, updated, and performing at its best</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4">
-                        <h5>Monthly Maintenance</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="maintenanceMonthlyPrice">$59/month</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">Regular Updates</li>
-                            <li class="mb-2">Security Monitoring</li>
-                            <li class="mb-2">Backup Management</li>
-                            <li class="mb-2">Performance Optimization</li>
-                            <li class="mb-2">Basic Support</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline-primary">Subscribe</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 mb-4 reveal">
-                    <div class="card pricing-card text-center p-4 featured">
-                        <h5>Annual Maintenance</h5>
-                        <div class="price display-4 fw-bold text-primary my-3" id="maintenanceAnnualPrice">$499/year</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">All Monthly Features</li>
-                            <li class="mb-2">Priority Support</li>
-                            <li class="mb-2">Advanced Security</li>
-                            <li class="mb-2">Emergency Response</li>
-                            <li class="mb-2">2 Free Months</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-primary">Save 30%</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section bg-primary text-white">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h2 class="mb-4">Ready to Transform Your Digital Presence?</h2>
-                    <p class="lead mb-4">Get a free consultation and quote tailored to your specific needs.</p>
-                    <a href="contact.html" class="btn btn-light btn-lg">Get Your Free Quote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>AnitechCS</h5>
-                    <p>Empowering businesses with innovative digital solutions since 2012.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AnitechCS</h4>
+                    <p>Empowering businesses with innovative digital solutions since 2012. We deliver excellence in web development, cloud hosting, and comprehensive IT services.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/anitechcs" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#pricing">Pricing</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Cloud Hosting</a></li>
-                        <li><a href="services.html">Maintenance & Support</a></li>
-                        <li><a href="services.html">ERP Integration</a></li>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#website-development">Website Development</a></li>
+                        <li><a href="#cloud-hosting">Cloud Hosting</a></li>
+                        <li><a href="#maintenance-support">Maintenance & Support</a></li>
+                        <li><a href="#digital-transformation">Digital Transformation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Subscribe to get updates on our latest services and offers.</p>
-                    <form action="https://anitechcs.usXX.list-manage.com/subscribe/post" method="POST" class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
                     </form>
+                    <p><small>By subscribing, you agree to our Privacy Policy.</small></p>
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 AnitechCS. All rights reserved.</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AnitechCS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/pricing.js"></script>
+    
+    <!-- FAQ Accordion JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle current answer
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        icon.className = 'fas fa-plus';
+                    } else {
+                        // Close all other answers
+                        faqQuestions.forEach(q => {
+                            const a = q.nextElementSibling;
+                            const i = q.querySelector('i');
+                            a.style.display = 'none';
+                            i.className = 'fas fa-plus';
+                        });
+                        
+                        // Open current answer
+                        answer.style.display = 'block';
+                        icon.className = 'fas fa-minus';
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Tech Badge Styles -->
+    <style>
+        .tech-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+    
+    <!-- Tawk.to Live Chat (Placeholder) -->
+    <script type="text/javascript">
+        // Replace PROPERTY_ID with actual Tawk.to property ID
+        /*
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/PROPERTY_ID/1234567890';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+        */
+    </script>
 </body>
 </html>
